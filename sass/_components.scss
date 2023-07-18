@@ -69,22 +69,53 @@
 
 .user-nav {
   display: flex;
+  align-self: stretch;
   align-items: center;
 
-  &__icon-box {
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
+
+  & > *:hover {
+    background-color: var(--cc-grey-light-2);
+  }
+
+  &__icon-box {
+    position: relative;
+  }
+
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--cc-grey-dark-2);
   }
+
   &__notification {
+    position: absolute;
+    top: 1.25rem;
+    right: 0.85rem;
+
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--cc-primary);
+
+    font-size: 0.8rem;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  &__user {
-  }
+
   &__user-photo {
     height: 3.75rem;
     border-radius: 50%;
-  }
-  &__user-name {
+    margin-right: 1rem;
   }
 }
