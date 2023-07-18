@@ -1,34 +1,48 @@
 :root {
+  // COLORS
   --cc-primary: #eb2f64;
   --cc-primary-light: #ff3366;
   --cc-primary-dark: #ba265d;
+
   --cc-gery-light-1: #faf9f9;
   --cc-gery-light-2: #f4f2f2;
   --cc-gery-light-3: #f0eeee;
   --cc-gery-light-4: #ccc;
+
   --cc-gery-dark-1: #333;
   --cc-gery-dark-2: #777;
-  --cc-gery-dark-3: #999; }
+  --cc-gery-dark-3: #999;
+}
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--cc-gery-dark-2);
+
   min-height: 100vh;
-  background-image: linear-gradient(to right bottom, var(--cc-primary-light), var(--cc-primary-dark));
+
+  background-image: linear-gradient(
+    to right bottom,
+    var(--cc-primary-light),
+    var(--cc-primary-dark)
+  );
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
