@@ -2,20 +2,65 @@
 // LOGO
 .logo {
   height: 3.5rem;
+  margin-left: 3rem;
 }
 
 //////////////////////////////////////////
 // SEARCH
 .search {
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &__input {
+    width: 90%;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    margin-right: -3.25rem;
+
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    background-color: var(--cc-grey-light-2);
+    border: none;
+
+    transition: all 0.2s ease-in;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+
+      background-color: var(--cc-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--cc-grey-light-4);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--cc-grey-light-3);
   }
 
   &__button {
+    border: none;
+    background-color: var(--cc-grey-light-2);
+
+    &:focus {
+      outline: none;
+      transform: translateY(2px);
+    }
   }
 
   &__icon {
     height: 2rem;
     width: 2rem;
+
+    fill: var(--cc-grey-dark-3);
   }
 }
 
@@ -23,6 +68,9 @@
 // USER NAVIGATION
 
 .user-nav {
+  display: flex;
+  align-items: center;
+
   &__icon-box {
   }
   &__icon {
