@@ -63,8 +63,13 @@ body {
 .hotel-view {
   background-color: #fff;
   flex: 1;
-  background-color: orangered;
   height: 80rem; }
+
+.gallery {
+  display: flex; }
+
+.overview {
+  display: flex; }
 
 .logo {
   height: 3.5rem;
@@ -187,3 +192,18 @@ body {
   text-align: center;
   padding: 2.5rem;
   color: var(--cc-grey-light-4); }
+
+.gallery__photo {
+  display: block;
+  width: 100%; }
+
+.overview {
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--cc-primary); }
